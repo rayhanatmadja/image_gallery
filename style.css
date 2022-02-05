@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  border: 5px solid grey;
+  margin: 10px auto;
+  overflow: auto;
+}
+
+.thumbnail {
+  width: 200px;
+  float: left;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  opacity: 0.5;
+}
+
+/* animasi fade */
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fade 0.5s forwards;
+}
+
+.active {
+  opacity: 0.5;
+}
